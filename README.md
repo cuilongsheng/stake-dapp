@@ -27,3 +27,15 @@ You can check out [the RainbowKit GitHub repository](https://github.com/rainbow-
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+# 1, 切换主题,这明显不是好方法
+
+# 2, UI 组件库使用较少, 没有兼容手机端
+
+# 3, 管理员界面和用户界面根据合约 owner 和当前钱包地址判断是加载 admin 页面/质押池页面
+
+# 4, 领取奖励和申请提现部分不完善
+
+# 5, 动画效果哦没做
+
+# 6, 组件可以多提取一下
