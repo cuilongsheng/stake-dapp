@@ -66,7 +66,7 @@ const Home: NextPage = () => {
       variants={containerVariants}
       initial="hidden"
       animate="visible"
-      className="max-w-4xl mx-auto px-4 py-8 space-y-8"
+      className="max-w-7xl mx-auto px-4 py-8 space-y-8"
     >
       {/* 顶部信息卡片 */}
       <motion.div variants={itemVariants} className="space-y-4">
@@ -171,9 +171,12 @@ const Home: NextPage = () => {
       </motion.div>
 
       {/* 质押池列表 */}
-      <motion.div variants={itemVariants} className="space-y-6">
+      <motion.div variants={itemVariants} className="space-y-6 ">
         {ids?.length && address ? (
-          <motion.div variants={containerVariants} className="grid gap-6">
+          <motion.div
+            variants={containerVariants}
+            className="flex flex-row justify-start gap-6 flex-wrap"
+          >
             {ids.map((pid, index) => (
               <motion.div
                 key={pid}
@@ -181,6 +184,7 @@ const Home: NextPage = () => {
                 custom={index}
                 whileHover={{ y: -2 }}
                 transition={{ duration: 0.2 }}
+                className="w-[calc(50%-0.75rem)]"
               >
                 <DepositePool
                   pid={pid}

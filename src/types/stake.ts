@@ -9,11 +9,16 @@ export interface PoolInfo {
   unstakeLockedBlocks: bigint;
 }
 
+export type IRequest = {
+  amount: bigint;
+  unlockBlocks: bigint;
+};
 // 用户信息类型
 export interface UserInfo {
   stAmount: bigint;
   finishedMetaNode: bigint;
   pendingMetaNode: bigint;
+  requests: IRequest[];
 }
 
 // 提现金额类型

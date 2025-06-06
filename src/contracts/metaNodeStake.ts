@@ -360,7 +360,7 @@ export const MetaNodeStakeAbi: Abi = [
     inputs: [
       {
         indexed: true,
-        internalType: "contract IERC20",
+        internalType: "address",
         name: "MetaNode",
         type: "address",
       },
@@ -421,18 +421,6 @@ export const MetaNodeStakeAbi: Abi = [
   },
   {
     anonymous: false,
-    inputs: [],
-    name: "UnpauseClaim",
-    type: "event",
-  },
-  {
-    anonymous: false,
-    inputs: [],
-    name: "UnpauseWithdraw",
-    type: "event",
-  },
-  {
-    anonymous: false,
     inputs: [
       {
         indexed: false,
@@ -442,6 +430,18 @@ export const MetaNodeStakeAbi: Abi = [
       },
     ],
     name: "Unpaused",
+    type: "event",
+  },
+  {
+    anonymous: false,
+    inputs: [],
+    name: "UnpauseClaim",
+    type: "event",
+  },
+  {
+    anonymous: false,
+    inputs: [],
+    name: "UnpauseWithdraw",
     type: "event",
   },
   {
@@ -598,19 +598,6 @@ export const MetaNodeStakeAbi: Abi = [
         internalType: "uint256",
         name: "",
         type: "uint256",
-      },
-    ],
-    stateMutability: "view",
-    type: "function",
-  },
-  {
-    inputs: [],
-    name: "UPGRADE_INTERFACE_VERSION",
-    outputs: [
-      {
-        internalType: "string",
-        name: "",
-        type: "string",
       },
     ],
     stateMutability: "view",
@@ -848,6 +835,19 @@ export const MetaNodeStakeAbi: Abi = [
   },
   {
     inputs: [],
+    name: "paused",
+    outputs: [
+      {
+        internalType: "bool",
+        name: "",
+        type: "bool",
+      },
+    ],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [],
     name: "pauseClaim",
     outputs: [],
     stateMutability: "nonpayable",
@@ -858,19 +858,6 @@ export const MetaNodeStakeAbi: Abi = [
     name: "pauseWithdraw",
     outputs: [],
     stateMutability: "nonpayable",
-    type: "function",
-  },
-  {
-    inputs: [],
-    name: "paused",
-    outputs: [
-      {
-        internalType: "bool",
-        name: "",
-        type: "bool",
-      },
-    ],
-    stateMutability: "view",
     type: "function",
   },
   {

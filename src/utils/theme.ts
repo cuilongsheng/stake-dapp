@@ -49,6 +49,7 @@ export const backgroundStyles = {
     green: "bg-emerald-50/80 dark:bg-emerald-900/20",
     amber: "bg-amber-50/80 dark:bg-amber-900/20",
     purple: "bg-purple-50/80 dark:bg-purple-900/20",
+    red: "bg-red-50/80 dark:bg-red-900/20",
   },
 };
 
@@ -60,6 +61,7 @@ export const borderStyles = {
     green: "border-emerald-100 dark:border-emerald-700/50",
     amber: "border-amber-100 dark:border-amber-700/50",
     purple: "border-purple-100 dark:border-purple-700/50",
+    red: "border-red-100 dark:border-red-700/50",
   },
 };
 

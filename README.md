@@ -28,14 +28,14 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-# 1, 切换主题,这明显不是好方法
+### 1, 切换主题,现有的明显不是好方法
 
-# 2, UI 组件库使用较少, 没有兼容手机端
+### 2, UI 组件库使用较少, 没有兼容手机端
 
-# 3, 管理员界面和用户界面根据合约 owner 和当前钱包地址判断是加载 admin 页面/质押池页面
+### 3, 管理员界面和用户界面根据合约 owner 和当前钱包地址判断是加载 admin 页面/质押池页面
 
-# 4, 领取奖励和申请提现部分不完善
+### 4, 领取奖励和申请提现部分不完善
 
-# 5, 动画效果哦没做
+### 5, 动画效果哦没做
 
-# 6, 组件可以多提取一下
+### 6, 组件可以多提取一下
